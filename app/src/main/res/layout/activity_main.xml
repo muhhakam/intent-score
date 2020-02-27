@@ -25,7 +25,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
         android:inputType="textPersonName"
-        android:text="Home Team"
+        android:hint="Home Team"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -38,7 +38,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginBottom="20dp"
         android:inputType="textPersonName"
-        android:text="Away Team"
+        android:hint="Away Team"
         app:layout_constraintBottom_toTopOf="@+id/btn_team"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -51,12 +51,14 @@
         android:layout_marginRight="20dp"
         android:layout_marginBottom="20dp"
         android:text="Next"
+        android:onClick="next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/home_logo"
+        android:onClick="changeAvatar"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="20dp"
@@ -67,10 +69,10 @@
 
     <ImageView
         android:id="@+id/away_logo"
+        android:onClick="changeAvatar2"
         android:layout_width="100dp"
         android:layout_height="100dp"
         app:layout_constraintBottom_toTopOf="@+id/away_team"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/home_logo"
